@@ -45,19 +45,19 @@ function main() {
     /*====================================
     Show Menu on Book
     ======================================*/
-    $(window).bind('scroll', function() {
-        var navHeight = $(window).height() - 10;
-        if ($(window).scrollTop() > navHeight) {
-            $('.navbar-default').addClass('on');
+    jQuery(window).bind('scroll', function() {
+        var navHeight = jQuery(window).height() - 700;
+        if (jQuery(window).scrollTop() > navHeight) {
+            jQuery('#Primary-menu .navbar-toggler, #Primary-menu .navbar-collapse').addClass('on');
         } else {
-            $('.navbar-default').removeClass('on');
+            jQuery('#Primary-menu .navbar-toggler, #Primary-menu .navbar-collapse ').removeClass('on');
         }
     });
 	/*====================================
     top -menu
     ======================================*/
-$('#Primary-menu.navbar-default li:has(ul), #Secondary-menu.navbar-default li:has(ul)').addClass('menu-item-has-children');
-$('.grid').isotope({
+jQuery('#Primary-menu.navbar-default li:has(ul), #Secondary-menu.navbar-default li:has(ul)').addClass('menu-item-has-children');
+jQuery('.grid').isotope({
   itemSelector: '.grid-item',
  masonryHorizontal: {
     rowHeight: 110
@@ -66,33 +66,29 @@ $('.grid').isotope({
 /*====================================
     text center
     ======================================*/	
-	$(".carousel").swipe({
+	jQuery(".carousel").swipe({
   swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-    if (direction == 'left') $(this).carousel('next');
-    if (direction == 'right') $(this).carousel('prev');
+    if (direction == 'left') jQuery(this).carousel('next');
+    if (direction == 'right') jQuery(this).carousel('prev');
   },
   allowPageScroll:"vertical"
 });
-$(window).resize(function(){
- $('#home-banner-block .carousel-caption').css({
-	 left: ($(window).width() - $('#home-banner-block .carousel-caption').outerWidth())/0,
-        top: ($(window).height() - $('#home-banner-block .carousel-caption ').outerHeight())/4
+jQuery(window).resize(function(){
+ jQuery('#home-banner-block .carousel-caption').css({
+	 left: (jQuery(window).width() - jQuery('#home-banner-block .carousel-caption').outerWidth())/0,
+        top: (jQuery(window).height() - jQuery('#home-banner-block .carousel-caption ').outerHeight())/4
     });
- $('#inner-banner .content').css({
-	 left: ($(window).width() - $('#inner-banner .content').outerWidth())/0,
-        top: ($(window).height() - $('#inner-banner .content ').outerHeight())/3
+ jQuery('#inner-banner .content').css({
+	 left: (jQuery(window).width() - jQuery('#inner-banner .content').outerWidth())/0,
+        top: (jQuery(window).height() - jQuery('#inner-banner .content ').outerHeight())/3
     });	
-	 $('#home-body-block .overlay-header.has-long article header.entry-header h3 ').css({
-		 position:'relative',
-	 //left: ($(window).width() - $('#home-banner-block .carousel-caption').outerWidth())/0,
-        top: ($(window).height() - $('#home-body-block .overlay-header.has-long article header.entry-header h3 ').outerHeight())/6
-    });
+	 
 });
 // To initially run the function:
-$(window).resize();
+jQuery(window).resize();
 /*creating click event*/
-$(document).ready(function(){
- $("#author-slide").owlCarousel({ 	 
+jQuery(document).ready(function(){
+ jQuery("#author-slide").owlCarousel({ 	 
   	     navigation : true, // Show next and prev buttons
 		 navigationText : ["", ""],
         slideSpeed : 300,
