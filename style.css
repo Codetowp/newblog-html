@@ -1334,6 +1334,11 @@ navbar-toggler span {
 	padding: 0;
 	margin: 0;
 }
+/*#Secondary-menu.navbar-default ul:last-child {
+    float: none;
+    left: 0;
+}*/
+
 #Secondary-menu.navbar-default ul li.menu-item-has-children a.page-scroll:after {
 	transform: rotate(90deg)
 }
@@ -1605,9 +1610,10 @@ embed, iframe, object {
 #inner-banner .entry-header h2 {
 	color: #fff;
 	font-weight: 900;
-	font-size: 40px;
+	font-size: 52px;
 	text-transform: uppercase;
 	max-width: 600px;
+	line-height: 1.2;
 	margin: 20px auto 30px auto;
 }
 #inner-banner .entry-header hr {
@@ -1760,25 +1766,6 @@ aside .widget:first-child .widget-title {
 .me {
 	border-bottom-color: #d35400;
 }
-.n-lt-s input[type='email'] {
-	width: 100%;
-	border: none;
-	box-shadow: none;
-	background: #ededed;
-	border-radius: 0px;
-}
-.n-lt-s button {
-	width: 100%;
-	background: #d35400;
-	color: #fff;
-	border: none;
-}
-.n-lt-s label {
-	font-size: 12px;
-	font-weight: 300;
-	color: #7f8c8d;
-	text-transform: uppercase;
-}
 .tagcloud {
 	background: #34ab8b;
 	padding: 30px;
@@ -1789,7 +1776,6 @@ aside .widget:first-child .widget-title {
 	font-size: 11px !important;
 	margin-left: 4px;
 	display: inline-block;
-	padding: 3px 3px;
 	border: dashed 1px #34ab8b;
 	margin-bottom: 0;
 	font-weight: 600;
@@ -1815,8 +1801,9 @@ aside .widget:first-child .widget-title {
 	color: #fff;
 }
 aside .widget_search {
-	margin-bottom: 18px;
+	margin-bottom: 45px;
 	margin-top: 27px;
+	display: block;
 }
 aside .widget_search .input-group {
 	margin-bottom: 0;
@@ -1904,7 +1891,7 @@ aside .widget_search button:hover {
 	display: inline-block;
 	color: #43484d;
 	position: absolute;
-	left: 45px;
+	left: 36px;
 	font-size: 18px;
 	background: none;
 	display: inline-block;
@@ -2037,7 +2024,7 @@ aside ul li a {
 	color: #676c75;
 	font-size: 14px;
 	text-transform: none;
-	font-weight: 400;
+	font-weight: 500;
 }
 aside ul li a:hover {
 	color: #34ab8b;
@@ -2450,9 +2437,10 @@ aside ul li a:hover {
 	padding: 0;
 	font-size: 14px;
 	letter-spacing: 0.6px;
-	line-height: 1.7;
+	line-height: 26px;
 	color: #6f6f6f;
 	margin-left: 0 !important;
+	margin-bottom: 20px;
 }
 #post-standard-block .col-md-8 #comments article p:first-child::first-letter {
 	color: #34ab8b;
@@ -2479,14 +2467,6 @@ aside ul li a:hover {
 }
 #comments a {
 	color: #404040;
-}
-#comments {
-	background: #fff;
-	margin-top: 30px;
-	border-top: 0px #999999 solid;
-	padding: 30px;
-	border-radius: 30px;
-	margin-bottom: 50px;
 }
 #comments ol.comment-list {
 }
@@ -2772,7 +2752,7 @@ ul.article-share li .fa:hover {
 	border-radius: 0px;
 	border-top: none;
 	border-bottom: none;
-	margin: 60px 0;
+	margin: 20px 0 25px;
 	-webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.08);
 	-moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.08);
 	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.08);
@@ -2794,12 +2774,18 @@ ul.article-share li .fa:hover {
 	height: 60px;
 	object-fit: cover;
 	margin: 0 auto;
+	margin-bottom: 14px;
 }
 .author-box .author-description {
-	font-size: 14px;
-	line-height: 1.8;
-	padding: 40px 0px;
+	padding: 0px 0px;
 	margin-left: 136px;
+}
+.author-box .author-description p {
+	font-size: 16px;
+	line-height: 1.8;
+	margin: 0 auto;
+	font-weight: 300;
+	font-style: italic;
 }
 .author-box .author_social .article-share {
 	text-align: left;
@@ -2826,12 +2812,13 @@ ul.article-share li .fa:hover {
 	color: #9fa3a7;
 	font-weight: 300;
 	text-transform: upercase;
+	margin-top: 6px;
 }
 .entry-meta-bar, .entry-category-bar {
 	font-size: 14px;
 	color: #676c75;
 	font-weight: 500;
-	margin: 12px 30px 30px 0;
+	margin: 6px 30px 20px 0;
 }
 .entry-meta-bar a {
 	font-size: 11px;
@@ -2844,7 +2831,7 @@ ul.article-share li .fa:hover {
 .entry-meta-bar a:hover {
 	color: #282b31;
 	transition: all 0.5s;
-	text-decoration: none;
+	text-decoration: underline;
 }
 .entry-category-bar a {
 	text-transform: uppercase;
@@ -2944,6 +2931,18 @@ ul.article-share li .fa:hover {
 }
 .owl-theme .owl-controls .owl-page.active span {
 	background: #FCAC45;
+}
+.single article img {
+	margin-bottom: 30px;
+}
+.single #home-body-block article img {
+	margin-bottom: auto;
+}
+.single #home-body-block h2.h4 {
+	line-height: 1.2;
+	padding-bottom: 8px;
+	font-size: 26px;
+	font-weight: 300;
 }
 /*--------------------------------------------------------------
 9.0 Homepage Sections
@@ -3344,6 +3343,8 @@ ul.top-social li a:hover {
 }
 #category-body-block article .article-post-img {
 	width: 100%;
+	max-height: 440px;
+	object-fit: cover;
 }
 #category-body-block .category-article-content {
 	padding: 30px 50px;
@@ -3549,7 +3550,7 @@ ul.top-social li a:hover {
 .posts-navigation ul li {
 	list-style: none;
 	display: inline-block;
-	width: auto !important;
+	width: auto;
 	margin: 7px auto;
 }
 .posts-navigation ul li:before {
@@ -3595,13 +3596,13 @@ ul.top-social li a:hover {
 	margin: 0 auto !important;
 }
 .single .posts-navigation ul li {
-	max-width: 230px;
+	width: 50%;
 	text-align: inherit;
 }
 .single .posts-navigation ul li a span {
 	display: block;
 	color: #282b31;
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 5px;
 	font-weight: 600;
 	text-transform: none;
@@ -3630,10 +3631,10 @@ ul.top-social li a:hover {
 	color: #34ab8b;
 	float: left;
 	font-size: 400%;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 60px;
-	padding-top: 4px;
-	padding-right: 8px;
+	padding-top: 0px;
+	padding-right: 10px;
 	padding-left: 3px;
 }
 .article-page-nav {
@@ -3646,6 +3647,10 @@ ul.top-social li a:hover {
 }
 .article-page-nav li {
 	display: inline-block;
+	font-size: 14px;
+	color: #282b31;
+	margin-right: 5px;
+	font-weight: 500;
 }
 .article-page-nav li:before {
 	display: none;
@@ -4060,8 +4065,8 @@ ul.top-social li a:hover {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.6px;
-	font-size: 60%;
-	padding: 4px 6px;
+	font-size: 10px;
+	padding: 4px 6px 3px;
 }
 .badge-primary {
 	background-color: #3bb5da;
@@ -4392,7 +4397,7 @@ aside {
 #top-header .top-search-form .input-group {
 	padding-left: 15px;
 }
-.carousel-caption h2 {
+.carousel-caption h2, #inner-banner .entry-header h2 {
 	font-size: 24px;
 }
 .carousel-caption {
@@ -4417,6 +4422,9 @@ aside {
 #bottom-footer .social-link {
 	text-align: center;
 	float: none;
+}
+.single .posts-navigation ul li {
+	width: 100%;
 }
 }
  @media (max-width: 480px) {
