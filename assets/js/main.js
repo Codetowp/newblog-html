@@ -64,8 +64,12 @@ jQuery('.grid').isotope({
   }
 });
 
-
-
+jQuery('#Secondary-menu ul li').mouseenter(function() {
+  //make sure menu does not fly off the right of the screen
+  if (jQuery(this).children('ul').offset().left + 200 > $(window).width()) {       
+    jQuery(this).children('ul').css('left', -225);          
+  } 
+});
 
 /*====================================
     text center
