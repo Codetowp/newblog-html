@@ -3285,12 +3285,17 @@ ul.top-social li a:hover {
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-#home-body-block .overlay-header article header.entry-header h3 a {
+#home-body-block .overlay-header article header.entry-header p{margin-bottom:0;}
+#home-body-block .overlay-header article header.entry-header p a {
 	color: #fff;
+	font-size:18px; line-height:1.6; font-weight:300; padding:0 50px; display:block;   margin-bottom:0; text-decoration:none; letter-spacing:1px;
 }
 #home-body-block .overlay-header article header.entry-header .date-article, #home-body-block .overlay-header article header.entry-header .date-article .posted-on a, #home-body-block .overlay-header article header.entry-header .byline a {
 	color: #f4f1f1;
 }
+#home-body-block .overlay-header .author.h5:before{display:block; width:30%; height:1px; background:#fff; content:''; margin:8px auto;}
+#home-body-block .overlay-header .author.h5{margin:0 auto;}
+#home-body-block .overlay-header .author.h5 a{font-size:16px;}
 .overlay-header:hover .article-post-img {
 	ransition: all 0.5s;
 	-moz-transition: all 0.5s;
