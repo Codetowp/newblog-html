@@ -4347,6 +4347,7 @@ aside {
 #bottom-footer {
 	text-align: center;
 }
+.side-author-block ul li a .fa{min-width:46px;}
 }
  @media (max-width: 800px) {
 .carousel-caption {
