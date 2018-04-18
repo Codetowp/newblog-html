@@ -66,9 +66,11 @@ font-family: 'Merriweather', serif;
 
 ::selection {
 	background: #35ac8c; /* WebKit/Blink Browsers */
+	color:#fff;
 }
 ::-moz-selection {
  background:#35ac8c; /* Gecko Browsers */
+ color:#fff;
 }
 /* Bootstrap handles normalize/reset of all elements */
 /*--------------------------------------------------------------
@@ -1638,7 +1640,6 @@ embed, iframe, object {
 	font-size: 12px;
 	font-weight: 500;
 	letter-spacing: 0.8px;
-	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 }
 #inner-banner .entry-header .author.vcard a {
@@ -1646,7 +1647,6 @@ embed, iframe, object {
 	font-size: 12px;
 	font-weight: 500;
 	letter-spacing: 0.8px;
-	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	color: #fff;
 	font-weight: 600;
@@ -2268,6 +2268,8 @@ aside ul li a:hover {
 .side-author-block {
 	text-align: center;
 	padding-top: 30px;
+	    max-width: 350px;
+    margin: 0 auto;
 }
 .side-author-block img {
 	width: 135px;
@@ -3041,8 +3043,106 @@ ul.top-social li a:hover {
 	border-color: #fff;
 	opacity: 0.8;
 }
-/* 9.1 Banner block*/
 
+/*Fashion layout*/
+
+.layout-fashion{}
+.layout-fashion .top-social-nav-block {
+    background: #f8adbe;
+}
+.layout-fashion .top-social-nav-block .logo-tagline a h1 small{color:#fff;}
+.layout-fashion #Primary-menu.navbar-default ul li:hover{background:#fff; color:#000;}
+.layout-fashion #Primary-menu.navbar-default ul > li:hover > a{color:#000;}
+.layout-fashion #Primary-menu.navbar-default ul ul li{ background: #f8adbe;}
+
+.layout-fashion #top-header .top-search-form form input[type="search"]{border-color:#fde5ea; background:#fde5ea;}
+.layout-fashion input[type="search"], .layout-fashion input[type="search"],.layout-fashion .widget_search button{border-color:#fde5ea; }
+.layout-fashion #top-header .top-search-form form button, .layout-fashion .widget_search form button{color:#f8adbe;}
+
+#second-banner-block{}
+#second-banner-block #second-banner-slide .item{ overflow:hidden;}
+#second-banner-block #second-banner-slide .item img{width:100%; position:relative; height:500px; object-fit:cover; transform:scale(1); transition:all 5s;}
+#second-banner-block #second-banner-slide .item:hover img{transform:scale(1.1); transition:all 5s;}
+#second-banner-block #second-banner-slide .item .content-block{position:absolute; color:#fff; z-index:1; left:0; right:0; bottom:0; background:rgba(125,113,231,0.8); padding:15px 80px 30px; text-align:left;     border-left: 50px rgba(255, 255, 255, 0.51) solid;}
+#second-banner-block #second-banner-slide .item .content-block h2{font-weight:500;}
+#second-banner-block #second-banner-slide .item .content-block h2 a, #second-banner-block #second-banner-slide .content-block span a,#second-banner-block #second-banner-slide .date-article .posted-on a,#second-banner-block #second-banner-slide .date-article .byline a,#second-banner-block #second-banner-slide .date-article .comment-article a, #second-banner-block #second-banner-slide .date-article i{color:#fff ; } 
+#second-banner-block #second-banner-slide .date-article .byline{margin:auto 15px;}
+#second-banner-block #second-banner-slide .date-article {text-align:left; padding:0; border:none;}
+
+  #second-banner-block #second-banner-slide .owl-controls .owl-prev, #second-banner-block #second-banner-slide .owl-controls .owl-next{ writing-mode: vertical-rl; font-size:18px; color:#282b31;
+  text-orientation: upright; font-weight:500; background:#fff; border-radius:0; border:1px #282b31 solid; padding:5px 2px;}
+#second-banner-block #second-banner-slide .owl-controls{position:absolute; top:36%; left:0; right:0;}
+#second-banner-block #second-banner-slide .owl-controls .owl-next{float:left; margin-left:22%;}
+  #second-banner-block #second-banner-slide .owl-controls .owl-prev{float:right; margin-right:22%;}
+  
+  @media (max-width: 600px) {
+  #second-banner-block #second-banner-slide .owl-controls{visibility:hidden;}
+  }
+  
+/*Fashion layout widget*/
+.layout-fashion .widget-title{ background: #f8adbe;}
+.layout-fashion .widget_recent_comments ul li span.comment-author-link a, .layout-fashion .widget_recent_comments ul li, .layout-fashion .widget_recent_comments ul li a:hover, .layout-fashion aside ul li a:hover{color:#f8adbe;}
+.layout-fashion .tagcloud a{color:#f8adbe; border-color:#f8adbe;}
+.layout-fashion .tagcloud {background:none;}
+.badge-fashion{background:#f8acbd; color:#fff;}
+
+
+/*Latest block*/
+#latest-block{padding:40px 0;}
+#latest-block h2{font-size:41px; font-weight:500; text-align:center; display:inline-block; margin:10px auto 55px;}
+#latest-block h2:after{content:""; width:15%; height:2px; display:block; background:#f8acbd; margin-top:30px;}
+#latest-block article{-webkit-transform: translateY(0px);
+    transform: translateY(0px);}
+#latest-block article:hover{-webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    transition: all 0.5s;}	
+#latest-block article header{padding:30px 20px; -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.08);
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.08);
+    }
+#latest-block article img {
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+}
+
+#latest-block article .tag-block {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+#latest-block article header h3 a {
+	color: #282b31;
+	font-weight: 600;
+}
+#latest-block article .date-article {padding:0; text-align:inherit; border:none;}
+#latest-block article .date-article:before{content:""; width:20%; height:1px; background:#ccc; display:block; margin-bottom:10px; }
+#latest-block article .date-article .post-on {float:left; text-align:left;}
+#latest-block article .date-article .comment-article {float:right; text-align:right;}
+
+
+/*fashion Home Block*/
+
+#fashion-home-body-block{padding:80px 0;}
+#fashion-home-body-block article{margin:40px 0;}
+#fashion-home-body-block article .hover-post-img{overflow:hidden; width:100%; height:100%;}
+#fashion-home-body-block article .hover-post-img img{position:relative; width:100%; height:285px; object-fit:cover;}
+#fashion-home-body-block article .hover-post-img header{position:absolute; top:0; bottom:0; height:285px; left:0; right:0; background:rgba(35,39,147,0.5); opacity:0; transition:all 0.5s;}
+#fashion-home-body-block article:hover .hover-post-img header{opacity:1; transition:all 0.5s;}
+#fashion-home-body-block article .hover-post-img .date-article {padding:10px; text-align:inherit; border:none;}
+#fashion-home-body-block article .hover-post-img .date-article span a, #fashion-home-body-block article .hover-post-img .date-article span a i{color:#fff; }
+#fashion-home-body-block article .hover-post-img .date-article .post-on {float:left; text-align:left; color:#fff;}
+#fashion-home-body-block article .hover-post-img .date-article .comment-article {float:right; text-align:right;}
+#fashion-home-body-block article h3 a{font-weight:500; color:#3c434d;}
+#fashion-home-body-block article .article-content-box{ padding:10px 0 10px 50px;}
+#fashion-home-body-block article .article-content-box p{margin-bottom:28px;}
+#fashion-home-body-block article .article-content-box .btn{font-size:12px; font-weight:900; text-decoration:underline; padding-bottom:3px; color:#282b31; text-transform:uppercase; margin:0; padding:0;}
+#fashion-home-body-block article .article-content-box .btn:hover{color:#f8adbe;  transition:all 0.5s;}
+
+#fashion-home-body-block .posts-navigation{background:none;}
+#fashion-home-body-block .posts-navigation ul li a:hover{background: #f8adbe;}
+/* 9.1 Banner block*/
+.no-padding{padding-left:0; padding-right:0;}
 #home-banner-block {
 }
 #home-banner-block .carousel-item {

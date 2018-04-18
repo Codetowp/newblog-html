@@ -104,7 +104,30 @@ jQuery(document).ready(function(){
 		 pagination:false,
         singleItem:true
   	  });  
+
+
+jQuery("#second-banner-slide").owlCarousel({ 	 
+  	     navigation : true, // Show next and prev buttons
+		 navigationText : ["NEXT", "PREV"],
+        slideSpeed : 1000,
+        paginationSpeed : 4000,
+		autoPlay : true,
+		 pagination:false,
+		  itemsCustom : [
+				        [0, 1],
+				        [450, 1],
+				        [600, 1],
+				        [700, 1],
+				        [1000, 2],
+				        [1200, 2],
+				        [1400, 3],
+				        [1600, 3]
+				      ]
+
+  	  });  
 });
+
+
 }());
 }
 main();
