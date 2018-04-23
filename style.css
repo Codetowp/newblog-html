@@ -1593,6 +1593,14 @@ embed, iframe, object {
 	text-align: center;
 	position: relative;
 }
+
+.banner-without-img{background:#fff; }
+#inner-banner.banner-without-img .entry-header {height:60vh; -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.2);
+box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.2);}
+#inner-banner.banner-without-img .entry-header:before{display:none;}
+#inner-banner.banner-without-img .entry-header h2, #inner-banner.banner-without-img .entry-header .byline, #inner-banner.banner-without-img .entry-header h5, #inner-banner.banner-without-img .entry-header .date-article, #inner-banner.banner-without-img .entry-header .author.vcard a, .single .banner-without-img .date-article .posted-on a{color:#282b31;}
+
 #inner-banner .entry-header:before {
 	content: "";
 	position: absolute;
